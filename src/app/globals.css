@@ -1,22 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --Blacky: ;
-  --BlackyFade1: ;
-  --BlackyFade2: ;
-  --Whitey: ;
-  --WhiteyFade1: ;
-  --WhiteyFade2: ;
-  --Prime: ;
-  --PrimeFade1: ;
-  --PrimeFade2: ;
-  --Secound: ;
-  --SecoundFade1: ;
-  --SecoundFade2: ;
-  --Assend: ;
-  --AssendFade1: ;
-  --AssendFade2: ;
-  --textColor: ;
+  --Blacky: #000000;
+  --BlackyFade1: #000000bf;
+  --BlackyFade2: #00000080;
+  --Whitey: #ffeed7;
+  --WhiteyFade1: #ffeed7bf;
+  --WhiteyFade2: #ffeed780;
+  --Prime: #8b5e3c;
+  --PrimeFade1: #8b5e3cbf;
+  --PrimeFade2: #8b5e3c80;
+  --Secound: #c19a6b;
+  --SecoundFade1: #c19a6bbf;
+  --SecoundFade2: #c19a6b80;
+  --Third: #6f4e37;
+  --ThirdFade1: #6f4e37bf;
+  --ThirdFade2: #6f4e3780;
+  --Assend: #3b2f2f;
+  --AssendFade1: #3b2f2fbf;
+  --AssendFade2: #3b2f2f80;
+  --textColor: black;
 }
 
 @theme inline {
@@ -39,15 +42,18 @@
   --color-Secound: var(--Secound);
   --color-SecoundFade1: var(--SecoundFade1);
   --color-SecoundFade2: var(--SecoundFade2);
+  --color-Third: var(--Third);
+  --color-ThirdFade1: var(--ThirdFade1);
+  --color-ThirdFade2: var(--ThirdFade2);
   --color-Assend: var(--Assend);
   --color-AssendFade1: var(--AssendFade1);
   --color-AssendFade2: var(--AssendFade2);
 }
 
 body {
-  background: var(--Blacky);
+  background: var(--Whitey);
   color: var(--textColor);
-  font-family: var(--font-Second);
+  font-family: var(--Secound); /* بدل --font-Second */
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
   user-select: none;
@@ -61,10 +67,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-Prime);
+  font-family: var(--Prime); /* بدل --font-Prime */
   font-weight: bolder;
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
 }
+
 .strokeWhitey {
   -webkit-text-stroke: 0.125px var(--Whitey);
   -moz-text-stroke: 0.125px var(--Whitey);
